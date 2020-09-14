@@ -21,6 +21,7 @@ Project inspired by Trask(2108), Martius(2016, 2018)
 
 ## Screenshots
 ![Example screenshot](./SpagPred_abs_MSE_spaghmsefinal_cab2d5e8-bcc7-11ea-b8b7-b888e395c23b.png)
+![Example screenshot](./SpagPred_abs_ReLEx_spaghrelexfinal_bf1dd186-bcc6-11ea-9685-b888e395c23b.png)
 
 ## Technologies
 * [version](https://img.shields.io/badge/version-1.1-green)
