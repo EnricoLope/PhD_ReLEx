@@ -1,6 +1,7 @@
 # ReLEx
-> Here goes your awesome project description!
+> This study covers Extrapolation behaviour control
 ![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
+![implementation](https://img.shields.io/badge/implementation-PyTorch-red)
 
 ## Table of contents
 * [General info](#general-info)
