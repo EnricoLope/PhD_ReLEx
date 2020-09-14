@@ -1,9 +1,9 @@
-# PhD_ReLEx
+# ReLEx
 > Here goes your awesome project description!
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
+<!--* [Screenshots](#screenshots)-->
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
@@ -14,8 +14,10 @@
 ## General info
 Add more general information about project. What the purpose of the project is? Motivation?
 
+<!--
 ## Screenshots
 ![Example screenshot](./img/screenshot.png)
+-->
 
 ## Technologies
 * Tech 1 - version 1.0
@@ -24,6 +26,7 @@ Add more general information about project. What the purpose of the project is? 
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
+
 
 ## Code Examples
 Show examples of usage:
@@ -40,10 +43,12 @@ To-do list:
 * Wow improvement to be done 2
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: _in progress_,
+https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+Project inspired by Trask(2108), Martius(2016, 2018)
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by Enrico Lopedoto {enrico.lopedoto@city.ac.uk} and Tillman Weyde {te.weyde@city.ac.uk} @ Computer Science Department, City, University of London.
+
