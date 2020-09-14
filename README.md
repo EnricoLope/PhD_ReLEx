@@ -32,6 +32,7 @@ Project inspired by Trask(2108), Martius(2016, 2018)
 * The project is not compiled as a pip installation package yet. Future releases might include this.
 * Local environment was setup in IntelliJ. 
 * Dependencies Packages needed are 
+
 `import torch
 from torch.autograd import Variable
 import torch.nn.functional as F
@@ -45,7 +46,8 @@ Force that pulls the kink into a certain range
 the range could be determined automatically
 percentile is one viable option when dealing in single dimension
 this does not apply to multidimensional scenarios to draw the boundaries
- `def centripetal_f(model, x_train):
+
+`def centripetal_f(model, x_train):
     kinks = -model.hidden.bias/model.hidden.weight.reshape(1,-1)
     L1_new = kinks - x_train
     loss = L1_new.pow(2).sum()
@@ -56,6 +58,7 @@ this does not apply to multidimensional scenarios to draw the boundaries
 This force aims to equally distribute the kinks
 by applying a gradient derived from the loss of the total
 sum of element wise distance
+
 `def mutuallyrep_f(model):
     kinks = -model.hidden.bias/model.hidden.weight.reshape(1, -1)
     k = torch.zeros((1, model.hidden.weight.size()[0]), requires_grad=True)
@@ -74,6 +77,7 @@ sum of element wise distance
 Intuitively speaking we want the movable part of the relu to point outward
 the weight needs to depend on the position of the kink with respect to the
 center of the data
+
 `def orient_k_f(model, x_train):
     kinks = -model.hidden.bias / model.hidden.weight.reshape(1, -1)
     km_diff = (kinks - x_train.mean())
@@ -88,6 +92,7 @@ center of the data
 This loss should ensure the presence of both signs in the weights
 we therefore measure a loss proportional to the difference of the sign of the two
 this should be ensured by thew distribution of kinks force mutually repellent force
+
 `def signrepel_f(model):
     s_w = model.hidden.weight.reshape(1,-1)
     tot_sign = s_w.sum().pow(2)
@@ -97,15 +102,18 @@ this should be ensured by thew distribution of kinks force mutually repellent fo
 
 ## Code Examples
 Examples of usage:
-`  RLoss_Train_store, RLoss_Val_store, RLoss_Test_store, \
+
+`RLoss_Train_store, RLoss_Val_store, RLoss_Test_store, \
     RLoss_True_store, RLoss_WLS_store, RLoss_Tang_store, \
     RPred_store, RTrained_Models, RparamDict, RresultDict = train()
 `
 
 ## Features
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+* Single Impulse
+* Single Response
+* Single Hidden layer
+* ReLU activation function
+* Zero Noise data
 
 To-do list:
 * Multiple impulses
