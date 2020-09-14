@@ -1,5 +1,6 @@
 # ReLEx
 > Here goes your awesome project description!
+![coverage](https://img.shields.io/badge/coverage-80%25-yellowgreen)
 
 ## Table of contents
 * [General info](#general-info)
