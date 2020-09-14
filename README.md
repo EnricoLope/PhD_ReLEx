@@ -20,7 +20,9 @@ We present an implementation on single input and single output feed-forward netw
 Project inspired by Trask(2108), Martius(2016, 2018)
 
 ## Screenshots
+* Standard MSE training results with 5 runs.
 ![Example screenshot](./SpagPred_abs_MSE_spaghmsefinal_cab2d5e8-bcc7-11ea-b8b7-b888e395c23b.png)
+* ReLEx implementation with 5 runs.
 ![Example screenshot](./SpagPred_abs_ReLEx_spaghrelexfinal_bf1dd186-bcc6-11ea-9685-b888e395c23b.png)
 
 ## Technologies
